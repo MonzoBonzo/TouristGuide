@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/game_menu_home"
+          android:icon="@drawable/home"
+          android:title="Home">
+    </item>
+	<item android:id="@+id/game_menu_explore"
+          android:icon="@drawable/explorecrum"
+          android:title="Explore">
+    </item>
+    <item android:id="@+id/game_menu_add"
+          android:icon="@drawable/addplace"
+          android:title="Add Site">
+    </item>
+    <item android:id="@+id/game_menu_guide"
+          android:icon="@drawable/guide"
+          android:title="Tourist Guide">
+    </item>
+    <item android:id="@+id/game_menu_history"
+          android:icon="@drawable/history"
+          android:title="History">
+    </item>
+    <item android:id="@+id/game_menu_settings"
+          android:icon="@drawable/settings"
+          android:title="System Settings">
+    </item>
+</menu>

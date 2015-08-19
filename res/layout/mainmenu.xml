@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg"
+	>
+		<LinearLayout 
+			android:id="@+id/actionbar"
+			android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:orientation="horizontal"
+		    android:background = "@color/SplashBlue"
+		>
+			<ImageView 
+	           android:id="@+id/currentPageImg"	
+	           android:layout_width="wrap_content"
+		       android:layout_height="fill_parent" 			
+	           android:src="@drawable/home"
+	           android:layout_marginTop = "5dip"
+	           android:layout_marginRight="5dip"
+	           android:layout_marginLeft="5dip"
+	           android:layout_marginBottom = "5dip"
+	           android:paddingBottom = "5dip"
+	           android:background="@null"
+	           android:layout_gravity="center" 
+	           android:paddingLeft="5dip" 
+	           android:paddingRight="7dip">
+	        </ImageView>
+	        
+	        <ImageView
+	            android:layout_width="1px"
+	        	android:layout_height="fill_parent"	
+	        	android:id="@+id/seperator"
+				android:background="@drawable/separator"
+				android:layout_marginRight="2dip">
+			</ImageView>			
+	       	<ImageView
+	       	    android:id="@+id/app_logo"
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="fill_parent"
+	       	    android:background="@drawable/blue_logo" >
+			</ImageView>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:orientation="vertical" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:layout_weight="1" 
+		    android:padding="1dip">
+	       	
+		        <LinearLayout
+		            android:id="@+id/section1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:layout_weight="0">
+		            
+		            <LinearLayout android:orientation="vertical" 
+	            		android:id="@+id/section1Explore"
+	            		android:layout_width="wrap_content" 
+	           			android:layout_height="wrap_content">
+	        			<ImageView
+	        			    android:id="@+id/explore"
+	        			    style="@style/Icon"
+	        			    android:layout_width="160dp"
+	        			    android:layout_height="90dp"
+	        			    android:src="@drawable/explore_icon2" />
+	        
+	        			<TextView style="@style/IconText" android:id="@+id/explore1" android:text="Explore" android:layout_marginTop="1dip"/>	        	        		  
+	        		</LinearLayout>	        
+	       			<LinearLayout
+	       				android:id="@+id/section1Add"
+	            		android:orientation="vertical"
+	      				android:layout_width="wrap_content"
+	      				android:layout_height="wrap_content">		  
+	        
+	        			<ImageView android:id="@+id/add_site" style="@style/Icon" android:src="@drawable/place" android:layout_width="160dp" android:layout_height="90dp"/>	            
+	            		<TextView  style="@style/IconText" android:text="Add Site" android:id="@+id/add" android:layout_marginTop="1dip"/>	            	   
+	   				 </LinearLayout>		            
+	             </LinearLayout>
+				<LinearLayout
+		            android:id="@+id/section2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:layout_weight="0">
+		            
+		            <LinearLayout android:orientation="vertical" 
+		            	android:id="@+id/section2Profile"
+	            		android:layout_width="wrap_content" 
+	           			android:layout_height="wrap_content">
+
+	        			<ImageView android:id="@+id/profile" style="@style/Icon" android:layout_width="160dp" android:layout_height="90dp" android:src="@drawable/information_icon" />	        
+	        			<TextView style="@style/IconText" android:id="@+id/profile1" android:text="Tourist Guide" android:layout_marginTop="1dip"/>	        	        		  
+	        		</LinearLayout>	        
+	       			<LinearLayout
+	       				android:id="@+id/section2Game"
+	            		android:orientation="vertical"
+	      				android:layout_width="wrap_content"
+	      				android:layout_height="wrap_content">		  
+	        
+	        			<ImageView android:id="@+id/game" style="@style/Icon" android:layout_width="160dp" android:layout_height="90dp" android:src="@drawable/game"/>	            
+	            		<TextView style="@style/IconText" android:text="Geo-Tag Game" android:id="@+id/game1" android:layout_marginTop="1dip"/>	            	   
+	   				 </LinearLayout>		            
+	             </LinearLayout>
+				<LinearLayout
+					android:id="@+id/section3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:layout_weight="0">
+		            
+		            <LinearLayout 
+		            	android:id="@+id/section3History"
+		            	android:orientation="vertical" 
+	            		android:layout_width="wrap_content" 
+	           			android:layout_height="wrap_content">
+
+	        			<ImageView android:id="@+id/history" style="@style/Icon" android:layout_width="160dp" android:layout_height="90dp" android:src="@drawable/historyv2" />	        
+	        			<TextView style="@style/IconText" android:id="@+id/history1" android:text="History" android:layout_marginTop="1dip"/>	        	        		  
+	        		</LinearLayout>	        
+	       			<LinearLayout
+	       				android:id="@+id/section3Settings"
+	            		android:orientation="vertical"
+	      				android:layout_width="wrap_content"
+	      				android:layout_height="wrap_content">		  
+	        
+	        			<ImageView android:id="@+id/settings" style="@style/Icon" android:layout_width="160dp" android:layout_height="90dp" android:src="@drawable/systemsettings"/>	            
+	            		<TextView  style="@style/IconText" android:text="System Settings" android:id="@+id/settings1" android:layout_marginTop="1dip"/>	            	   
+	   				 </LinearLayout>		            
+	             </LinearLayout>
+	    </LinearLayout>
+</LinearLayout>

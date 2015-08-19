@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="C:/Users/Monique/Desktop/workspace/TouristGuidev0.0.3/libs/google-api-client-1.6.0-beta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monique/Desktop/workspace/TouristGuidev0.0.3/libs/google-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monique/Desktop/workspace/TouristGuidev0.0.3/libs/google-http-client-1.6.0-beta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Monique/Desktop/workspace/TouristGuidev0.0.3/libs/jackson-mini-1.9.2.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

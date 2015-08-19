@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:id="@+id/settingsActionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/SplashBlue"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="7dip"
+            android:src="@drawable/settings" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/separator" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/blue_logo" >
+        </ImageView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/settingsActionbar"
+        android:gravity="center"
+        android:text="Change your system settings below."
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/settingsTitle"
+        android:layout_marginTop="50dip"
+        android:text="Cluster Radius:"
+        android:textColor="#FF000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+	 <RadioGroup
+	   android:layout_below="@+id/textView1"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal">        
+	   
+	   <RadioButton
+	    android:id="@+id/option1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+	    android:text="10m " />
+	   
+	   <RadioButton
+	    android:id="@+id/option2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+	    android:text="20m " />
+	   
+	   <RadioButton
+	    android:id="@+id/option3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+	    android:checked="true"
+	    android:text="30m " />
+	   
+	   <RadioButton
+	    android:id="@+id/option4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+	    android:text="40m " />
+	 </RadioGroup>
+    
+    <TextView
+        android:id="@+id/haloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="100dip"
+        android:text="Show Halo:"
+        android:textColor="#FF000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	 
+	 <RadioGroup
+	   android:layout_below="@+id/haloText"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal">        
+	   
+	   <RadioButton
+	    android:id="@+id/option5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+	    android:text="No " />
+	   
+	   <RadioButton
+	    android:id="@+id/option6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:checked="true"
+        android:textColor="#FF000000"
+	    android:text="Yes " />
+	 </RadioGroup>    
+</RelativeLayout>

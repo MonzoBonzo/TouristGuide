@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cluster_menu_home"
+          android:icon="@drawable/ic_launcher"
+          android:title="Home">
+    </item>
+    <item android:id="@+id/cluster_menu_add"
+          android:icon="@drawable/ic_launcher"
+          android:title="Add Site">
+    </item>
+    <item android:id="@+id/cluster_menu_guide"
+          android:icon="@drawable/ic_launcher"
+          android:title="Tourist Guide">
+    </item>
+	<item android:id="@+id/cluster_menu_game"
+          android:icon="@drawable/ic_launcher"
+          android:title="Geo-Tagger Game">
+    </item>
+    <item android:id="@+id/cluster_menu_history"
+          android:icon="@drawable/ic_launcher"
+          android:title="History">
+    </item>
+    <item android:id="@+id/cluster_menu_settings"
+          android:icon="@drawable/ic_launcher"
+          android:title="System Settings">
+    </item>
+</menu>

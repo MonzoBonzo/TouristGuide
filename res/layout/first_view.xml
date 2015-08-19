@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imageView1"
+        android:text="Birmingham is situated West Midlands, is Britain&apos;s second largest city (by local authority district). Known in the Victorian era, as the &apos;City of a 1000 Trades&apos; and the &apos;Workshop of the World&apos;, Brum as locals call the city, is enjoying a 21st century resurgence as a great shopping and cultural destination. Birmingham has many of its own tourist attractions, has an extremely lively night life, and the shopping is arguably one of the best outside of London." />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/selfridges" />
+</RelativeLayout>

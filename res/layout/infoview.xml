@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg" android:layout_height="wrap_content" android:weightSum="1">
+		
+		<LinearLayout 
+			android:id="@+id/actionbar"
+			android:layout_width="fill_parent"
+		    android:layout_height="40dip"
+		    android:orientation="horizontal"
+		    android:background = "@color/SplashBlue">
+			
+			<ImageView 
+	           android:id="@+id/currentPageImg"	
+	           android:layout_width="wrap_content"
+		       android:layout_height="fill_parent" 			
+	           android:src="@drawable/explorecrum"
+	           android:layout_marginTop = "5dip"
+	           android:layout_marginRight="5dip"
+	           android:layout_marginLeft="5dip"
+	           android:layout_marginBottom = "5dip"
+	           android:paddingBottom = "5dip"
+	           android:background="@null"
+	           android:layout_gravity="center" 
+	           android:paddingLeft="5dip" 
+	           android:paddingRight="7dip">
+	        </ImageView>
+	        
+	        <ImageView
+	            android:layout_width="1px"
+	        	android:layout_height="fill_parent"	
+	        	android:id="@+id/seperator"
+				android:background="@drawable/separator"
+				android:layout_marginRight="2dip">
+			</ImageView>			
+	       	<ImageView
+	       	    android:id="@+id/app_logo"
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="fill_parent"
+	       	    android:background="@drawable/blue_logo" >
+			</ImageView>
+	    </LinearLayout>	
+	    <LinearLayout
+	    	android:id="@+id/infobar"
+			android:layout_width="fill_parent"
+		    android:layout_height="25dip"
+		    android:orientation="horizontal"
+		    android:background = "#DD000000">
+	        
+	        <TextView
+	        	android:text="Address"
+	        	android:id="@+id/addressbar"
+	        	android:gravity="center"
+	        	android:layout_width="match_parent" android:layout_height="match_parent">
+	        </TextView>
+    
+	    </LinearLayout>
+	   	<LinearLayout
+	    	android:id="@+id/imagesinfo"
+			android:layout_width="fill_parent"
+		    android:layout_height="120dip"
+		    android:orientation="horizontal">
+	   		<LinearLayout 
+	   			android:id="@+id/linearLayout1"
+	   			android:layout_height="match_parent"
+	   			android:orientation="vertical"
+	   			android:layout_width="match_parent">
+	   			
+	   			<ImageView
+	   			    android:id="@+id/image"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:layout_gravity="center_horizontal"
+	   			    android:src="@drawable/explore" >
+				</ImageView>
+	   		</LinearLayout>
+	    </LinearLayout>
+	    <LinearLayout
+	    	android:id="@+id/categorybar"
+			android:layout_width="fill_parent"
+		    android:layout_height="25dip"
+		    android:orientation="horizontal">
+	        
+	        <TextView
+	        	android:text="Category"
+	        	android:textColor="#FF000000"
+	        	android:id="@+id/categoryinfo"
+	        	android:gravity="center"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </TextView>    
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/textTel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="#FF000000" />
+
+	    <TextView
+	        android:id="@+id/textWebsite"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="#FF000000" />
+
+	    <TextView
+	        android:id="@+id/locationInfo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.45"
+	        android:paddingTop="10dip"
+	        android:text="Location Info to be implemented"
+	        android:textColor="#FF000000" />
+			   
+</LinearLayout>

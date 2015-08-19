@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/historyActionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/SplashBlue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="7dip"
+            android:src="@drawable/history">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/separator">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/blue_logo" >
+        </ImageView>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyActionbar"
+        android:layout_centerHorizontal="true"
+        android:text="Below are all the places currently explored."/>
+
+    <TextView
+        android:id="@+id/historyLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Size: 0"/>
+    
+	<ListView
+        android:cacheColorHint="#00000000"
+        android:id="@+id/historyplacelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyLength"
+        android:layout_centerHorizontal="true">
+    </ListView>
+	<SlidingDrawer
+	    android:layout_width="match_parent"
+	    android:orientation="vertical"
+	    android:layout_height="match_parent"
+	    android:content="@+id/contentHistory"
+	    android:handle="@+id/handleHistory" >
+	
+	      <ImageView
+	          	android:id="@+id/handleHistory"             
+	            android:src="@drawable/filter" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content"/>
+	
+			<LinearLayout android:id="@+id/contentHistory" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/bg">
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal" >		            
+			     	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+		        		<ImageView style="@style/Icon" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/restaurant"/>	        
+		        		<TextView style="@style/IconText" android:text="Restaurants" android:layout_marginTop="1dip"/>	        	        		  
+		        	</LinearLayout>	        
+		       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+		        		<ImageView android:layout_gravity="center" style="@style/Icon" android:src="@drawable/fooddrink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+		            	<TextView  style="@style/IconText" android:text="Food n Drink" android:layout_marginTop="1dip"/>	            	   
+		   			</LinearLayout>     
+		         </LinearLayout> 
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal">		            
+			    	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+		        		<ImageView  style="@style/Icon" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:src="@drawable/landmark"/>	        
+		        		<TextView style="@style/IconText" android:text="Landmarks" android:layout_marginTop="1dip"/>	        	        		  
+		        	</LinearLayout>	        
+		       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+		        		<ImageView android:layout_gravity="center" style="@style/Icon" android:src="@drawable/museum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+		            	<TextView  style="@style/IconText" android:text="Museums" android:layout_marginTop="1dip"/>	            	   
+		   			</LinearLayout>	
+	   			</LinearLayout>	
+	 			<LinearLayout android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal">		            
+			    	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+		        		<ImageView  style="@style/Icon" android:layout_gravity="center"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:src="@drawable/shopping"/>	        
+		        		<TextView style="@style/IconText" android:text="Shopping" android:layout_marginTop="1dip"/>	        	        		  
+		        	</LinearLayout>	        
+		       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+		        		<ImageView android:layout_gravity="center"  style="@style/Icon" android:src="@drawable/entertainment" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+		            	<TextView  style="@style/IconText" android:text="Entertainment" android:layout_marginTop="1dip"/>	            	   
+		   			</LinearLayout>	
+	   			</LinearLayout>	
+	        </LinearLayout>
+	</SlidingDrawer>
+</RelativeLayout>

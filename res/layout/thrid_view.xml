@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imageView1"
+        android:text="It’s party-time in Birmingham. No city in Europe wide has a younger population, puts more energy, passion or creativity into enjoying a out. We’ve more students than any other UK city outside of London. Not surprising then that our club scene puts others to shame. Want plenty of choice? Take your pick. Vibrant bars. Numerous nightspots. And endless rated restaurants. Then there’s our champion comedy clubs, theatres and gigs for all. Plus world class classics from the CBSO and Birmingham Royal Ballet." />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/broadstreet" />
+</RelativeLayout>

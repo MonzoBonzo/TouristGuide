@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+	    
+	    <LinearLayout
+        android:id="@+id/choiceActionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/SplashBlue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="7dip"
+            android:src="@drawable/addplace">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/separator">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/blue_logo" >
+        </ImageView>
+    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/choiceActionbar"
+	        android:layout_marginTop="50dip"
+	        android:gravity="center"
+	        android:text="How do you wish to add a new site?"
+	        android:textSize="32sp" />
+
+	    <Button
+	        android:id="@+id/buttonCurrent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="66dp"
+	        android:text="Using my current Location" />
+
+	    <Button
+	        android:id="@+id/buttonHistory"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/buttonCurrent"
+	        android:text="Get Address using my History" />
+
+</RelativeLayout>

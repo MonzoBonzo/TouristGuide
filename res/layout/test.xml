@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handle" />
+        
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            <LinearLayout
+		            android:id="@+id/section1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:orientation="horizontal" 
+		            android:layout_weight="0">
+		            
+		            <LinearLayout android:orientation="vertical" 
+	            		android:layout_width="wrap_content" 
+	           			android:layout_height="wrap_content">
+
+	        			<ImageView
+	        			    style="@style/Icon"
+	        			    android:layout_width="160dp"
+	        			    android:layout_height="90dp"
+	        			    android:src="@drawable/explore_icon" />
+	        
+	        			<TextView style="@style/IconText" android:text="Explore" android:layout_marginTop="1dip"/>	        	        		  
+	        		</LinearLayout>	        
+	       			<LinearLayout
+	            		android:orientation="vertical"
+	      				android:layout_width="wrap_content"
+	      				android:layout_height="wrap_content">		  
+	        
+	        			<ImageView style="@style/Icon" android:src="@drawable/place_icon" android:layout_width="160dp" android:layout_height="90dp"/>	            
+	            		<TextView  style="@style/IconText" android:text="Add Site" android:layout_marginTop="1dip"/>	            	   
+	   				 </LinearLayout>		            
+	         </LinearLayout>
+	         <LinearLayout
+		            android:id="@+id/section2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:orientation="horizontal" 
+		            android:layout_weight="0">
+		            
+		            <LinearLayout android:orientation="vertical" 
+	            		android:layout_width="wrap_content" 
+	           			android:layout_height="wrap_content">
+
+	        			<ImageView
+	        			    style="@style/Icon"
+	        			    android:layout_width="160dp"
+	        			    android:layout_height="90dp"
+	        			    android:src="@drawable/explore_icon" />
+	        
+	        			<TextView style="@style/IconText" android:text="Explore" android:layout_marginTop="1dip"/>	        	        		  
+	        		</LinearLayout>	        
+	       			<LinearLayout
+	            		android:orientation="vertical"
+	      				android:layout_width="wrap_content"
+	      				android:layout_height="wrap_content">		  
+	        
+	        			<ImageView style="@style/Icon" android:src="@drawable/place_icon" android:layout_width="160dp" android:layout_height="90dp"/>	            
+	            		<TextView  style="@style/IconText" android:text="Add Site" android:layout_marginTop="1dip"/>	            	   
+	   				 </LinearLayout>		            
+	         </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+		android:id="@+id/actionbarMap"
+		android:layout_width="fill_parent"
+		android:layout_height="40dip"
+		android:orientation="horizontal"
+		android:background = "@color/SplashBlue">
+		
+		<ImageView 
+           android:id="@+id/mapImg"	
+           android:layout_width="wrap_content"
+	       android:layout_height="fill_parent" 			
+           android:src="@drawable/explorecrum"
+           android:layout_marginTop = "5dip"
+           android:layout_marginRight="5dip"
+           android:layout_marginLeft="5dip"
+           android:layout_marginBottom = "5dip"
+           android:paddingBottom = "5dip"
+           android:background="@null"
+           android:layout_gravity="center" 
+           android:paddingLeft="5dip" 
+           android:paddingRight="7dip">
+        </ImageView>
+        
+        <ImageView
+            android:layout_width="1px"
+        	android:layout_height="fill_parent"	
+        	android:id="@+id/seperatorMap"
+			android:background="@drawable/separator"
+			android:layout_marginRight="2dip">
+		</ImageView>
+
+       	<ImageView
+       	    android:id="@+id/app_logo"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="fill_parent"
+       	    android:background="@drawable/blue_logo" >
+		</ImageView>
+    </LinearLayout>     
+
+     <LinearLayout
+         android:id="@+id/linearLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="400dip"
+         android:orientation="vertical" >
+
+     <view
+         class="com.google.android.maps.MapView"
+         android:id="@+id/map"
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:apiKey="@string/google_maps_key"         
+         android:clickable="true" 
+     />
+    </LinearLayout>
+</LinearLayout>
+<SlidingDrawer
+    android:id="@+id/slidingDrawer1"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:content="@+id/content"
+    android:handle="@+id/handle" >
+
+      <ImageView
+          	android:id="@+id/handle"             
+            android:src="@drawable/filter" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"/>
+
+		<LinearLayout android:id="@+id/content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/bg">
+            <LinearLayout android:id="@+id/filtersection1" android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal" >		            
+		     	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+	        		<ImageView style="@style/Icon" android:layout_gravity="center" android:id="@+id/filterRestaurant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/restaurant"/>	        
+	        		<TextView style="@style/IconText" android:text="Restaurants" android:layout_marginTop="1dip"/>	        	        		  
+	        	</LinearLayout>	        
+	       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+	        		<ImageView android:layout_gravity="center" android:id="@+id/filterFoodDrink" style="@style/Icon" android:src="@drawable/fooddrink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+	            	<TextView  style="@style/IconText" android:text="Food n Drink" android:layout_marginTop="1dip"/>	            	   
+	   			</LinearLayout>     
+	         </LinearLayout> 
+			<LinearLayout android:id="@+id/filtersection" android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal">		            
+		    	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+	        		<ImageView  style="@style/Icon" android:layout_gravity="center"  android:id="@+id/filterLandmark" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:src="@drawable/landmark"/>	        
+	        		<TextView style="@style/IconText" android:text="Landmarks" android:layout_marginTop="1dip"/>	        	        		  
+	        	</LinearLayout>	        
+	       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+	        		<ImageView android:layout_gravity="center" android:id="@+id/filterMusuem" style="@style/Icon" android:src="@drawable/museum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+	            	<TextView  style="@style/IconText" android:text="Museums" android:layout_marginTop="1dip"/>	            	   
+	   			</LinearLayout>	
+   			</LinearLayout>	
+ 			<LinearLayout android:id="@+id/filtersection3" android:layout_width="fill_parent" android:layout_height="130dp" android:orientation="horizontal">		            
+		    	<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">
+	        		<ImageView  style="@style/Icon" android:layout_gravity="center"  android:id="@+id/filterShopping" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:src="@drawable/shopping"/>	        
+	        		<TextView style="@style/IconText" android:text="Shopping" android:layout_marginTop="1dip"/>	        	        		  
+	        	</LinearLayout>	        
+	       		<LinearLayout android:orientation="vertical" android:layout_width="160dip" android:layout_height="130dip">	        
+	        		<ImageView android:layout_gravity="center" android:id="@+id/filterEntertainment" style="@style/Icon" android:src="@drawable/entertainment" android:layout_width="wrap_content" android:layout_height="wrap_content"/>	            
+	            	<TextView  style="@style/IconText" android:text="Entertainment" android:layout_marginTop="1dip"/>	            	   
+	   			</LinearLayout>	
+   			</LinearLayout>	
+        </LinearLayout>
+</SlidingDrawer>
+</RelativeLayout>
